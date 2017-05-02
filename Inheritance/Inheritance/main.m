@@ -6,6 +6,12 @@
 //  Copyright © 2017 steve. All rights reserved.
 //
 
+/*
+- Create a super class.
+- Create a subclass Rubber Duck to demonstrate overriding and calling super's implementation.
+- Create a subclass Decoy Duck to demonstrate overriding and doing nothing
+*/
+
 #import <Foundation/Foundation.h>
 #import "MallardDuck.h"
 #import "PaintedDuck.h"
