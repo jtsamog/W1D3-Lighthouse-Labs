@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /*
-- Properties are merely a convenient syntax for generating this code (Image having to write all of this boilerplate code for every property?
+- Properties are merely a convenient syntax for generating this code (Imagine having to write all of this boilerplate code for every property?
 - Notice we are using encapsulation to prevent any object from simply setting or getting _age.
 - Objc forces you to encapsulate values as it doesn't let you just expose variables in the interface.
 
