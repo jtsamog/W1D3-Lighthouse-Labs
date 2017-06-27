@@ -14,5 +14,6 @@ int main(int argc, const char * argv[]) {
   person1.age = @10;
   NSNumber *age = person1.age;
   NSLog(@"line: %d: age: %@", __LINE__, age);
+  person1.heightInCentimeters = @155;
   return 0;
 }

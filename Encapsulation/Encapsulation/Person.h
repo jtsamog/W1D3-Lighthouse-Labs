@@ -16,17 +16,19 @@
 */
 
 @interface Person : NSObject {
+  // backing store
   NSNumber *_age;
 }
 
+// setter and getter
 - (void)setAge:(NSNumber *)age;
 - (NSNumber *)age;
 
-// Generates an error
+// Generates an error because you can't expose a variable in the interface which breaks encapsulation
 // NSNumber *someNumber;
 
-// this construct is identifical
-// we can override the setter and getter. Why would we want to do this?
+// The property is a construct that does the same thing as _age, setAge: and age.
+// We can override the setter and getter. Why would we want to do this?
 @property (nonatomic) NSNumber *heightInCentimeters;
 
 
