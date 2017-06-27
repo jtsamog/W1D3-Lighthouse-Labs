@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAB80DF91F029E0A0002582C /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB80DF81F029E0A0002582C /* Hero.m */; };
+		AAB80DFC1F029E1A0002582C /* Shield.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB80DFB1F029E1A0002582C /* Shield.m */; };
 		AADA3D8D1EB935D4006EF7F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D8C1EB935D4006EF7F9 /* main.m */; };
-		AADA3D951EB935E7006EF7F9 /* SteeringWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D941EB935E7006EF7F9 /* SteeringWheel.m */; };
-		AADA3D981EB936CC006EF7F9 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D971EB936CC006EF7F9 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AAB80DF71F029E0A0002582C /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		AAB80DF81F029E0A0002582C /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		AAB80DFA1F029E1A0002582C /* Shield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shield.h; sourceTree = "<group>"; };
+		AAB80DFB1F029E1A0002582C /* Shield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shield.m; sourceTree = "<group>"; };
 		AADA3D891EB935D4006EF7F9 /* Composition */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Composition; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADA3D8C1EB935D4006EF7F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AADA3D931EB935E7006EF7F9 /* SteeringWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteeringWheel.h; sourceTree = "<group>"; };
-		AADA3D941EB935E7006EF7F9 /* SteeringWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteeringWheel.m; sourceTree = "<group>"; };
-		AADA3D961EB936CC006EF7F9 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		AADA3D971EB936CC006EF7F9 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				AADA3D8C1EB935D4006EF7F9 /* main.m */,
-				AADA3D961EB936CC006EF7F9 /* Car.h */,
-				AADA3D971EB936CC006EF7F9 /* Car.m */,
-				AADA3D931EB935E7006EF7F9 /* SteeringWheel.h */,
-				AADA3D941EB935E7006EF7F9 /* SteeringWheel.m */,
+				AAB80DF71F029E0A0002582C /* Hero.h */,
+				AAB80DF81F029E0A0002582C /* Hero.m */,
+				AAB80DFA1F029E1A0002582C /* Shield.h */,
+				AAB80DFB1F029E1A0002582C /* Shield.m */,
 			);
 			path = Composition;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AADA3D981EB936CC006EF7F9 /* Car.m in Sources */,
-				AADA3D951EB935E7006EF7F9 /* SteeringWheel.m in Sources */,
 				AADA3D8D1EB935D4006EF7F9 /* main.m in Sources */,
+				AAB80DF91F029E0A0002582C /* Hero.m in Sources */,
+				AAB80DFC1F029E1A0002582C /* Shield.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +263,7 @@
 				AADA3D921EB935D4006EF7F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -28,11 +28,13 @@
 
 #### Inheritance vs object composition
 - Inheritance contrasts with object composition.
-- Composition is where a class gets behavior or attributes from other objects that are passed in to it (injected), or instantiated internally.
-- This is, many classes are complex not just by inheriting behavior by they can also be made up of (composed of) other classes.
-- By analogy, you also didn't just inherit everything you are from your parents. 
-- Some of it you went out and got or it was handed to you by others. 
-- For instance, you probably didn't inherit  (in the biological sense) your fascination for iPhones. It was something you acquired.
+- Composition is where a class gets behavior or attributes from other objects. A composite class is made up (composed) of other classes.  These other classes can be passed in (injected), or instantiated internally.
+- That is, classes can inherit behavior and/or they can also be composed of other classes.
+```Objective-c
+@interface Person: NSObject
+@property (nonatomic, strong) Car *car;
+@end
+```
 
 #### Why Is Inheritance Important to Understand?
 - It's a central concept in OOP.
@@ -40,9 +42,9 @@
 - Much of your code in iOS will start by subclassing CocoaTouch classes.
 - Actually individual CocoaTouch classes themselves usually consist of big inheritance trees.
 - For instance, we know that all classes in Objective-C descend from NSObject. 
-- This is where we get alloc and init from.
+- This is where we get alloc and init from and many other things.
 - Also, most iOS apps are made up of custom ViewControllers that all start by subclassing Apple's UIViewController class.
-- Inheritance is absolutely everywhere!
+- Inheritance is absolutely everywhere and without it we wouldn't be able to write iPhone apps!
 
 ![](img/h.png)
 
@@ -51,25 +53,25 @@
 ![](img/d.png)
 
 ### What's Bad About Inheritance?
-- Like everything good there is a down side. Inheritance is no different.
+- Inheritance isn't all good though.
 - You won't go far as a programmer before you hear that you should "prefer composition over inheritance". Why is this?
 - Can make code complex to understand.
-- The code we're running might be sitting in a super class far removed up the hierarchy from where it is running.
+- The code running in a subclass could be defined somewhere far removed from where it's running which can make it hard to understand.
 - Inheriting an implementation of a method creates a dependency between the subclass and the chain of super classes above it. 
-- This means that your subclass gets all of the public properties and method implementations whether this makes sense or not! You might have to override stuff and do nothing! (It's all or nothing.)
+- This means that your subclass gets all of the public properties and method implementations whether this makes sense or not! You might have to override stuff and do nothing just to avoid inheriting some behavior that doesn't make sense for the subclass! 
 - Changes to the superclass propogate automatically down and might have an adverse impact on subclasses.
 - It can make code hard to maintain.
-- There are better mechanisms to get the benefits of inheritance without the down sides using object composition.
+- There are better mechanisms to get the benefits of inheritance without the down sides. For instance, using object composition.
 
 ### `self` vs `super`
 - Classes often want to call methods or set properties on themselves (the instance).
-- For this we use use `self`. (Some languages use  `this`).
+- We use use `self` in Objc and Swift to indicate the current instance. (Some languages use  `this`).
 - When you want to call something on your super class you call `super`.
 - `self` stands for the *current instance*.
 - `super` stands for the *current instance*'s `superclass` instance (i.e. your immediate parent).
-- You mostly only use `super` when you override a method and want to get the super class's implementation too. 
+- You mostly only use `super` when you override a super class method and you want to run the super class's implementation before adding behavior on to this. 
 
-> Note: Check the documentation when overriding Apple's methods to see whether you are expected to call super. If you omit a call to super expect weirdness.
+> Note: Always check the documentation when overriding Apple's methods to see whether you are expected to call super. If you omit a call to super expect weirdness.
 
 **[ Inheritance & Composition Demos]**
 

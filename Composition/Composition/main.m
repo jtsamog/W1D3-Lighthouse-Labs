@@ -7,18 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Car.h"
-#import "SteeringWheel.h"
+#import "Hero.h"
+#import "Shield.h"
 
 int main(int argc, const char * argv[]) {
-  SteeringWheel *sw = [[SteeringWheel alloc] initWithValue:60];
-  Car *c = [[Car alloc] initWithSteeringWheel:sw];
-  NSInteger v = c.steeringWheel.value;
-  NSLog(@"line %d steering wheel value is %@ ", __LINE__, @(v));
+
+  Shield *shield = [[Shield alloc] initWithShieldType:Saphire];
+  Hero *hero1 = [[Hero alloc]initWithName:@"Sparky" shield:shield];
+  NSLog(@"%@", hero1);
   
-  // With composition I can optionally exclude a component
-  Car *c2 = [[Car alloc] init];
-  NSInteger v2 = c2.steeringWheel.value;
-  NSLog(@"line %d steering wheel value is %@ ", __LINE__, @(v2));
+  // We can optionally omit the Shield from our hero.
+  Hero *hero2 = [[Hero alloc] init];
+  NSLog(@"%@", hero2);
+
+  
+  
+  
+  
+
   return 0;
 }
