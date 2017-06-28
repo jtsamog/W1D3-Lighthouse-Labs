@@ -77,14 +77,15 @@
 
 ### `interface` vs `implementation` files
 
-- By convention the name of a class's file matches the name of the class. (This is not enforced like Java). E.g. The name of the class Person is by convention Person.m and Person.h.
+- By convention the name of a class's files matches the name of the class. (This is not enforced like Java). 
+- E.g. The name of the file that holds the class Person is by convention Person.m and Person.h.
 - Objc uses 2 files by convention to represent a class. You could put them both in 1 file if you wanted, or you could even put many classes in 1 file.
 - Objc separates out an interface and an implementation like C and C++.
 - Whatever is declared in the interface is public (except Instance Variables `IVARS`).
 - We will learn about how to declare properties that can only be seen internally later (I think next week) when we talk about categories. (It's just a separate interface in the .m file).
 - Note in modern Objc you never need to declare methods as private in a separate interface.
 - Properties are just conveniences and were added to 2.0 (2006). 
-- The compiler defines as a setter and getter method (assuming it is readwrite) and a backing store.
+- The compiler defines properties as a setter and getter method (assuming it is readwrite) and a backing store (`IVar`).
 - The backing store is private and cannot normally be accessed from outside the class directly.
 - To access it, that is, to set it or get it, you must call the property using `.` notation or method notation. (dot notation was added in 2.0 and is just a convenience, but always prefer dot notation for properties).
 - The fact that instance variables are hidden by design is an expression of a principle in OOP known as `encapsulation`.
