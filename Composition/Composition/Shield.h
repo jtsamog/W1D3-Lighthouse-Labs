@@ -15,6 +15,7 @@ typedef NS_ENUM(NSUInteger, ShieldType) {
   Saphire
 };
 
+
 @interface Shield : NSObject
 - (instancetype)initWithShieldType:(ShieldType)type NS_DESIGNATED_INITIALIZER;
 @property (nonatomic, assign) ShieldType shieldType;

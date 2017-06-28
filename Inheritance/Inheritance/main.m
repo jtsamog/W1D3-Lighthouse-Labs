@@ -16,22 +16,17 @@
 #import "MallardDuck.h"
 #import "PaintedDuck.h"
 
-void makeQuack(MallardDuck *mallard, PaintedDuck *painted) {
-  if (mallard) {
-    NSString *quack = [mallard quack];
-    NSLog(@"line %d: %@", __LINE__, quack);
-  }
-  
-  if (painted) {
-    NSString *quack = [painted quack];
-    NSLog(@"line %d: %@", __LINE__, quack);
-  }
 
+void makeQuack(Duck *mallard, Duck *painted) {
+    NSString *quack1 = [mallard quack];
+    NSLog(@"line %d: %@", __LINE__, quack1);
+    NSString *quack2 = [painted quack];
+    NSLog(@"line %d: %@", __LINE__, quack2);
 }
 
 int main(int argc, const char * argv[]) {
-  MallardDuck *mallard = [[MallardDuck alloc]initWithName:@"Quacker"];
-  PaintedDuck *painted = [[PaintedDuck alloc] initWithName:@"Redhead"];
+  Duck *mallard = [[MallardDuck alloc]initWithName:@"Quacker"];
+  Duck *painted = [[PaintedDuck alloc] initWithName:@"Redhead"];
   makeQuack(mallard, painted);
   return 0;
 }

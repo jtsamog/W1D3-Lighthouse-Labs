@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Duck.h"
 
-@interface MallardDuck : NSObject
-@property (nonatomic, copy) NSString *name;
-- (instancetype)initWithName:(NSString *)name NS_DESIGNATED_INITIALIZER;
-- (NSString *)quack;
+@interface MallardDuck : Duck
+
 @end

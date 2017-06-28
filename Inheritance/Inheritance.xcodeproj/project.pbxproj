@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAB80DFF1F03EBFA0002582C /* Duck.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB80DFE1F03EBFA0002582C /* Duck.m */; };
+		AAB80E021F03ED3F0002582C /* RubberDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB80E011F03ED3F0002582C /* RubberDuck.m */; };
 		AADA3D5E1EB91A5B006EF7F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D5D1EB91A5B006EF7F9 /* main.m */; };
 		AADA3D661EB91A7C006EF7F9 /* MallardDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D651EB91A7C006EF7F9 /* MallardDuck.m */; };
 		AADA3D691EB91A8F006EF7F9 /* PaintedDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = AADA3D681EB91A8F006EF7F9 /* PaintedDuck.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AAB80DFD1F03EBFA0002582C /* Duck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Duck.h; sourceTree = "<group>"; };
+		AAB80DFE1F03EBFA0002582C /* Duck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Duck.m; sourceTree = "<group>"; };
+		AAB80E001F03ED3F0002582C /* RubberDuck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubberDuck.h; sourceTree = "<group>"; };
+		AAB80E011F03ED3F0002582C /* RubberDuck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubberDuck.m; sourceTree = "<group>"; };
 		AADA3D5A1EB91A5B006EF7F9 /* Inheritance */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Inheritance; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADA3D5D1EB91A5B006EF7F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AADA3D641EB91A7C006EF7F9 /* MallardDuck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallardDuck.h; sourceTree = "<group>"; };
@@ -64,10 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				AADA3D5D1EB91A5B006EF7F9 /* main.m */,
+				AAB80DFD1F03EBFA0002582C /* Duck.h */,
+				AAB80DFE1F03EBFA0002582C /* Duck.m */,
 				AADA3D641EB91A7C006EF7F9 /* MallardDuck.h */,
 				AADA3D651EB91A7C006EF7F9 /* MallardDuck.m */,
 				AADA3D671EB91A8F006EF7F9 /* PaintedDuck.h */,
 				AADA3D681EB91A8F006EF7F9 /* PaintedDuck.m */,
+				AAB80E001F03ED3F0002582C /* RubberDuck.h */,
+				AAB80E011F03ED3F0002582C /* RubberDuck.m */,
 			);
 			path = Inheritance;
 			sourceTree = "<group>";
@@ -130,9 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB80DFF1F03EBFA0002582C /* Duck.m in Sources */,
 				AADA3D691EB91A8F006EF7F9 /* PaintedDuck.m in Sources */,
 				AADA3D661EB91A7C006EF7F9 /* MallardDuck.m in Sources */,
 				AADA3D5E1EB91A5B006EF7F9 /* main.m in Sources */,
+				AAB80E021F03ED3F0002582C /* RubberDuck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +275,7 @@
 				AADA3D631EB91A5B006EF7F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

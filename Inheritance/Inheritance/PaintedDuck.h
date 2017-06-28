@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Duck.h"
 
-@interface PaintedDuck : NSObject
-@property (nonatomic, copy) NSString *name;
-- (instancetype)initWithName:(NSString *)name NS_DESIGNATED_INITIALIZER;
-- (NSString *)quack;
+@interface PaintedDuck : Duck
+- (instancetype)initWithPaintColor:(NSString *)color;
 @end

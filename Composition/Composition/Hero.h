@@ -12,7 +12,6 @@
 @interface Hero : NSObject
 - (instancetype)initWithName:(NSString *)name shield:(Shield *)shield NS_DESIGNATED_INITIALIZER;
 
-//- (instancetype)initWithShield:(Shield *)shield NS_DESIGNATED_INITIALIZER;
 @property (nonatomic, strong) Shield *shield;
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @end

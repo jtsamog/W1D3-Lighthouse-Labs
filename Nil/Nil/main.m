@@ -12,6 +12,7 @@ int main(int argc, const char * argv[]) {
   
   // You can send a message to nil in Objc unlike most languages
   NSNumber *number;
+//  number = NULL;
   NSInteger integer = number.integerValue;
   NSLog(@"line %d: %ld", __LINE__, (long)integer);
   NSString *string; // defaults to nil

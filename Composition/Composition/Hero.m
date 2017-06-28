@@ -10,6 +10,7 @@
 #import "Shield.h"
 
 @implementation Hero
+
 - (instancetype)initWithName:(NSString *)name shield:(Shield *)shield{
   if (self = [super init]) {
     _name = name;

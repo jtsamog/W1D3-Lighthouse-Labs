@@ -12,7 +12,7 @@ int main(int argc, const char * argv[]) {
 
   // NSDictionary
   
-  NSDictionary *dict = @{@"name" : @"Bob", @"age" : @22, @"address": @"587 Brink Stree"};
+  NSDictionary  *dict = @{@"name" : @"Bob", @"age" : @22, @"address": @"587 Brink Stree"};
   
   // loop through a dictionary. why am I casting item to id?
   
@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
   }
   
   // Immutable dictionaries cannot be changed
-  // dict[@"name"] = @"Henry";
+//   dict[@"name"] = @"Henry";
   
   // can't use literal syntax for mutable dictionaries (but there's a trick)
   NSMutableDictionary *mutableDict = [@{@"name" : @"Bob", @"age" : @22, @"address": @"587 Brink Stree"} mutableCopy];

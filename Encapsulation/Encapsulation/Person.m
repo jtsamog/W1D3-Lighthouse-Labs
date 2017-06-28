@@ -19,5 +19,10 @@
   return _age;
 }
 
+- (void)setHeightInCentimeters:(NSNumber *)heightInCentimeters {
+  // update the interface
+  _heightInCentimeters = heightInCentimeters;
+}
+
 
 @end

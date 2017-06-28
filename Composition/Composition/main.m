@@ -12,7 +12,7 @@
 
 int main(int argc, const char * argv[]) {
 
-  Shield *shield = [[Shield alloc] initWithShieldType:Saphire];
+  Shield *shield = [[Shield alloc] initWithShieldType:Plastic];
   Hero *hero1 = [[Hero alloc]initWithName:@"Sparky" shield:shield];
   NSLog(@"%@", hero1);
   

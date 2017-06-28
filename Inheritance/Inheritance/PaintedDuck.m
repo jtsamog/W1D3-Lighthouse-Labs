@@ -7,20 +7,12 @@
 //
 
 #import "PaintedDuck.h"
-
 @implementation PaintedDuck
-- (instancetype)initWithName:(NSString *)name {
-  if (self = [super init]) {
-    _name = name;
+- (instancetype)initWithPaintColor:(NSString *)color {
+  if (self = [super initWithName:@"hi"]) {
+
   }
   return self;
 }
 
-- (instancetype)init {
-  return [self initWithName:@"Default"];
-}
-
-- (NSString *)quack {
-  return @"Quack quack";
-}
 @end
